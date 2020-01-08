@@ -10,4 +10,5 @@
 
 .editor .markdown{
   flex: 20;
+  border: 1px solid #000;
 }

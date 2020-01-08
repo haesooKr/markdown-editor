@@ -1,12 +1,13 @@
 import React from 'react'
+import './Preview.css';
 
 export default function Preview() {
   return (
-    <div>
-      <div className="preview-title">
+    <div className="preview">
+      <div className="title">
         Title
       </div>
-      <div className="preview-markdown">
+      <div className="markdown">
         Markdown
       </div>
     </div>
