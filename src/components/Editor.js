@@ -12,9 +12,6 @@ import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/monokai.css';
 
 export default class Editor extends Component {
-  editor = null;
-  codeMirror = null;
-
   initializeEditor = () => {
     this.codeMirror = CodeMirror(this.editor, {
       mode: 'markdown',
@@ -22,6 +19,14 @@ export default class Editor extends Component {
       lineNumbers: true,
       lineWrapping: true
     });
+    this.codeMirror.on('change', this.handleChangeMarkDown);
+  }
+
+  handleChangeMarkDown = (doc) => {
+    const { onChange } = this.props;
+    const value = doc.getValue();
+    console.log(value);
+    onChange(value);
   }
 
   componentDidMount(){
