@@ -9,6 +9,13 @@
 }
 
 .editor .markdown{
+  display: flex;
+  flex-direction: column;
   flex: 20;
   border: 1px solid #000;
+}
+
+.CodeMirror{
+  font-size: 1rem;
+  flex: 1;
 }
