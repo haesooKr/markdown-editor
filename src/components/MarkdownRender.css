@@ -1,0 +1,60 @@
+.markdown-render blockquote{
+  border-left: 4px solid rgb(48, 135, 248);
+  padding: 0.5rem;
+  background: rgb(228, 227, 227);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.markdown-render p{
+  margin: 0;
+}
+
+.markdown-render h1 code,
+.markdown-render h2 code,
+.markdown-render h3 code,
+.markdown-render h4 code,
+.markdown-render h5 code,
+.markdown-render p code {
+  background: rgb(245, 244, 244);
+  padding: 0.25rem;
+  color: rgb(91, 148, 255);
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 2px;
+}
+
+.markddown-render h1,
+.markddown-render h2,
+.markddown-render h3,
+.markddown-render h4 {
+  font-weight: 500;
+}
+
+.markdown-render a {
+  color: blue;
+  text-decoration: none;
+}
+
+.markdown-render a:hover {
+  color: rgb(135, 135, 248);
+  text-decoration: underline;
+}
+
+.markdown-render table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-render th,
+.markdown-render td{
+  border: 1px solid rgb(85, 85, 85);
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  text-align-last: left;
+}
+
+.markdown-render img {
+  min-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
