@@ -1,15 +1,15 @@
 import React from 'react'
 import './Preview.css';
+import MarkdownRender from './MarkdownRender';
 
-export default function Preview(state) {
-  console.log(state);
+export default function Preview({title, code}) {
   return (
     <div className="preview">
       <div className="title">
-        {state.title}
+        {title}
       </div>
       <div className="markdown">
-        {state.code}
+        <MarkdownRender code={code}/>
       </div>
     </div>
   )
