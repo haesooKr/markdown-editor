@@ -1,13 +1,13 @@
 import React from 'react';
-import Editor from './components/Editor';
-import Preview from './components/Preview';
 import './App.css';
+import EditorContainer from './containers/EditorContainer';
+import PreviewContainer from './containers/PreviewContainer';
 
 function App() {
   return (
     <div className="App">
-      <Editor/>
-      <Preview/>
+      <EditorContainer/>
+      <PreviewContainer/>
     </div>
   );
 }
