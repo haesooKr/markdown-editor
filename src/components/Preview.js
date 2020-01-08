@@ -6,7 +6,7 @@ export default function Preview(state) {
   return (
     <div className="preview">
       <div className="title">
-        Title
+        {state.title}
       </div>
       <div className="markdown">
         {state.code}

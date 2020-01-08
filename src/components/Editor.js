@@ -23,10 +23,9 @@ export default class Editor extends Component {
   }
 
   handleChangeMarkDown = (doc) => {
-    const { onChange } = this.props;
-    const value = doc.getValue();
-    console.log(value);
-    onChange(value);
+    const { onChangeCode } = this.props;
+    const code = doc.getValue();
+    onChangeCode(code);
   }
 
   componentDidMount(){
@@ -34,12 +33,14 @@ export default class Editor extends Component {
   }
 
   render() {
+    const { onChangeTitle } = this.props;
     return (
       <div className="editor">
         <input
           className="title"
           placeholder="Enter the title"
           name="title"
+          onChange={(e) => onChangeTitle(e.target.value)}
         />
         <div className="markdown" ref={ref => this.editor=ref}>
           {/* markdown */}
