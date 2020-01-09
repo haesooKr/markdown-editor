@@ -12,3 +12,11 @@ html, body{
 .App > *{
   flex: 1;
 }
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
