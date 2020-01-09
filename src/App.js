@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import EditorContainer from './containers/EditorContainer';
 import PreviewContainer from './containers/PreviewContainer';
-import Header from './components/Header';
+import HeaderContainer from './containers/HeaderContainer';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <HeaderContainer/>
       <EditorContainer/>
       <PreviewContainer/>
     </div>

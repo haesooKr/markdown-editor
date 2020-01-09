@@ -12,8 +12,8 @@ export const updateCode = (code) => ({
 });
 
 const initialState = {
-  title: "",
-  code: ""
+  title: localStorage.getItem('title') || "",
+  code: localStorage.getItem('code') || ""
 }
 
 export default function reducer(state = initialState, action){

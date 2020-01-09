@@ -14,6 +14,7 @@ import 'codemirror/theme/monokai.css';
 export default class Editor extends Component {
   initializeEditor = () => {
     this.codeMirror = CodeMirror(this.editor, {
+      value: this.props.code || '',
       mode: 'markdown',
       theme: 'monokai',
       lineNumbers: true,
@@ -33,13 +34,14 @@ export default class Editor extends Component {
   }
 
   render() {
-    const { onChangeTitle } = this.props;
+    const { onChangeTitle, title } = this.props;
     return (
       <div className="editor">
         <input
           className="title"
           placeholder="Enter the title"
           name="title"
+          value={ title || "" }
           onChange={(e) => onChangeTitle(e.target.value)}
         />
         <div className="markdown" ref={ref => this.editor=ref}>

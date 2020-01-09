@@ -11,7 +11,7 @@ import 'prismjs/components/prism-css.min.js'
 
 export default class MarkdownRender extends Component {
   state = {
-    code: ''
+    code: this.props.code || ""
   }
 
   renderMarkdown = () => {
@@ -27,7 +27,11 @@ export default class MarkdownRender extends Component {
       })
     });
   }
-  
+  componentDidMount(){
+    if(this.state.code !== ""){
+      this.renderMarkdown();
+    }
+  }
   componentDidUpdate(prevProps, prevState){
     if(prevProps.code !== this.props.code){
       this.renderMarkdown();
@@ -37,7 +41,7 @@ export default class MarkdownRender extends Component {
     }
   }
 
-  render() {
+  render() {    
     const { code } = this.state;
     const markup = {
       __html: code
