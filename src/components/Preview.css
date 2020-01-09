@@ -2,18 +2,29 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: scroll;
+  display: none;
+  outline: none;
+}
+
+@media only screen and (min-width: 768px){
+  .preview{
+    display: block;
+  }
 }
 
 .preview .title{
+  margin: 5px 10px;
   font-size: 2rem;
-  color: rgb(7, 7, 7);
+  padding: 0 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(0, 0, 0);
   font-weight: bold;
-  border-bottom: 1px solid rgb(190, 190, 190);
+  
 }
 
 .preview .markdown{
   padding: 0 20px;
   flex: 20;
-  overflow-y: scroll;
 }
