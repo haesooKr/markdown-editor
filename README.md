@@ -7,5 +7,5 @@
 
 ## Mobile View
 
-![Mobile View](/src/images/mobile.png)
-![Mobile View](/src/images/mobile2.png)
+![Mobile View](/src/images/mobile.png = 200px)
+![Mobile View](/src/images/mobile2.png = 200px)
