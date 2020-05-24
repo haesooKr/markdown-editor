@@ -7,5 +7,5 @@
 
 ## Mobile View
 
-![Mobile View](/src/images/mobile.png width="200")
-![Mobile View](/src/images/mobile2.png width="200x")
+<img src="./src/images/mobile.png" width="300" height="300" alt="mobileView1>
+<img src="./src/images/mobile2.png" width="300" height="300" alt="mobileView2>
