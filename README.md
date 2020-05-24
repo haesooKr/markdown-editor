@@ -5,8 +5,11 @@
 
 ![Desktop View](/src/images/desktop.png)
 
+
 ## Mobile View
 
-<img src="/src/images/mobile.png" width="300" height="300" alt="mobileView1>
-<img src="http://via.placeholder.com/150" width="300" height="300">
-<img src="src/images/mobile2.png" width="300" height="300" alt="mobileView2>
+### Home Screen
+<img src="/src/images/mobile.png" width=400>
+
+### Preview Screen
+<img src="src/images/mobile2.png" width=400>
