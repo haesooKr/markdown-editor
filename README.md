@@ -1,5 +1,11 @@
 # Markdown Editor
+[Run Markdown Editor Demo!](https://haesoo-markdowneditor.netlify.app)
 
-- Fully Responsive with mobile
-- Allow to change view in the mobile / tablet
-- Save temp data to Local Storage
+## Desktop View
+
+![Desktop View](/src/images/desktop.png)
+
+## Mobile View
+
+![Mobile View](/src/images/mobile.png)
+![Mobile View](/src/images/mobile2.png)
